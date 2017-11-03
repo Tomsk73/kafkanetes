@@ -17,14 +17,14 @@ Prerequirement: ensure you have persistent storage available in OpenShift.  If n
 
 1. Clone repository
  ```bash
-$ git clone https://github.com/jim-minter/kafkanetes.git
+$ git clone https://github.com/Tomsk73/kafkanetes.git
 ```
 
 1. (Optionally) import templates into OpenShift (requires elevated privileges)
 
    If you follow this step, as an alternative you can use the UI for all subsequent steps.  If you omit this step, in all subsequent steps substitute `$ oc process -f kafkanetes/foo.yaml | oc create -f -` for `$ oc new-app foo`.
 
-   ```bash
+```bash
 $ for i in kafkanetes/*.yaml; do sudo oc create -f $i -n openshift; done
 ```
 
